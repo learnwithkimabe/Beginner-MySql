@@ -33,15 +33,14 @@ FROM parks_and_recreation.employee_demographics;
 SELECT
 first_name,
 gender,
-birth_date,
-age
+birth_date
 FROM parks_and_recreation.employee_demographics;
 
 # CARA PENULISAN DIATAS ADALAH CARA BEST PRACTICE YANG READABLE
 # ARTINYA KITA SELEKSI KOLOM first_name, gender, dan birth_date DI DB parks_and_recreation DGN NAMA TABLE employee_demographics
 # KITA JUGA BISA MENAMBAHKAN KOLOM SECARA LANGSUNG DENGAN PERINTAH SBB :
 
-# KITA INGIN KOLOM FULLNAME YANG MENGGABUNGKAN first_name + last_name
+# KITA INGIN KOLOM AGE LAKUKAN OPERASI PENJUMLAHAN
 SELECT 
 first_name,
 last_name,
